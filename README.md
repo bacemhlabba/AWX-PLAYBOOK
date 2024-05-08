@@ -14,7 +14,7 @@ Explore our playbook arsenal:
 ## Usage
 
 Get started with these simple steps:
-
+Alternatively, use the AWX web interface: These playbooks can also be executed through the AWX web interface. Import the playbooks into AWX, configure job templates, and launch them with ease through the UI.
 1. **Clone this repository** to your local machine:
 
    ```bash
