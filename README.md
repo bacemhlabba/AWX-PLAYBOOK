@@ -18,7 +18,7 @@ Alternatively, use the AWX web interface: These playbooks can also be executed t
 1. **Clone this repository** to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/awx-playbook.git
+   git clone https://github.com/bacemhlabba/AWX-PLAYBOOK.git
 1- Modify the inventory.ini file to match your environment. Ensure SSH access to listed hosts.
 2- Update variables in group_vars/ and host_vars/ directories to fit your needs.
 3- Run a playbook using the command:
