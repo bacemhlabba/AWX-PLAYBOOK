@@ -1,0 +1,7 @@
+---
+- name: Shutdown Servers
+  hosts: all
+  become: true
+  tasks:
+    - name: Shutdown servers
+      shell: shutdown -h now
