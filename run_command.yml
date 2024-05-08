@@ -4,4 +4,4 @@
   become: true
   tasks:
     - name: Run custom command
-      command: "your_command_here"
+      command: "sudo apt update"
