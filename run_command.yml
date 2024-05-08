@@ -1,7 +1,7 @@
----
 - name: Run Command on Servers
   hosts: all
   become: true
+  become_password: dali
   tasks:
     - name: Run custom command
       command: apt update
