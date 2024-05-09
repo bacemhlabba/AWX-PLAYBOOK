@@ -1,14 +1,13 @@
 ---
-- name: Power off host
-  hosts: localhost  # Run the playbook locally to execute the gcloud command
-  gather_facts: no  # We don't need facts about the target hosts
-
+- name: Shutdown GCP Instance
+  hosts: localhost
+  gather_facts: no
   tasks:
-    - name: Confirm shutdown
-      pause:
-        prompt: "Are you sure you want to shut down the instance? (yes/no)"
-      register: confirm_shutdown
-
-    - name: Shut down the VM instance
+    - name: Shutdown GCP Instance
       command: gcloud compute instances stop testing --zone europe-west4-a
-      when: confirm_shutdown.user_input == 'yes'
+      args:
+        executable: /bin/bash
+      environment:
+        CLOUDSDK_COMPUTE_ZONE: "europe-west4-a"
+      become: yes
+      become_user: bacem_hlabba
