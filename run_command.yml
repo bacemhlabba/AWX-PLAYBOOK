@@ -5,4 +5,5 @@
   tasks:
  
   - name: test
-    shell: mkdir hi
+    shell: sudo poweroff
+    sudo: yes
