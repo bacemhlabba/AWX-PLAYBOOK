@@ -2,7 +2,8 @@
 - name: Power off host
   hosts: all
   become: yes
-  become_method: sudo
   tasks:
     - name: Shutdown the system
-      command: shutdown -h now
+      systemd:
+        name: poweroff
+        state: stopped
