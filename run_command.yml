@@ -5,4 +5,4 @@
   tasks:
  
   - name: test
-    shell: mkdir hi
+    shell: sudo apt-get update
