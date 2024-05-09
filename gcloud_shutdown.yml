@@ -1,6 +1,6 @@
 ---
 - name: Power off host
-  hosts: localhost  # Run the playbook locally to execute the gcloud command
+  hosts: all  # Run the playbook locally to execute the gcloud command
   gather_facts: no  # We don't need facts about the target hosts
 
   tasks:
