@@ -1,6 +1,8 @@
-- name: Run Command on Servers
+---
+- name: test!
   hosts: all
-  become: true
+ 
   tasks:
-    - name: Run custom command
-      command: apt update
+ 
+  - name: test
+    shell: echo "waaaa"
