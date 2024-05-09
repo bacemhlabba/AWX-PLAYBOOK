@@ -1,9 +1,8 @@
 ---
-- name: test!
+- name: Power off host
   hosts: all
- 
+  become: yes
+  become_method: sudo
   tasks:
- 
-  - name: test
-    shell: sudo poweroff
-    sudo: yes
+    - name: Shutdown the system
+      command: shutdown -h now
