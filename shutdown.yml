@@ -5,4 +5,4 @@
   become: true
   tasks:
     - name: Shutdown servers
-      command: sudo apt-get update
+      shell: sudo apt-get update
