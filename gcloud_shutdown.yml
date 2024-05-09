@@ -9,5 +9,3 @@
         executable: /bin/bash
       environment:
         CLOUDSDK_COMPUTE_ZONE: "europe-west4-a"
-      become: yes
-      become_user: bacem_hlabba
