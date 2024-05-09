@@ -4,6 +4,4 @@
   become: yes
   tasks:
     - name: Shutdown the system
-      systemd:
-        name: poweroff
-        state: stopped
+      command: poweroff
