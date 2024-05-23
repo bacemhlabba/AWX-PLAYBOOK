@@ -1,13 +1,9 @@
 ---
-- name: Power off host
+- name: Create a directory on all hosts
   hosts: all
   become: yes
   tasks:
-    - name: Confirm shutdown
-      pause:
-        prompt: "Are you sure you want to shut down the system? (yes/no)"
-      register: confirm_shutdown
-
-    - name: Shutdown the system
-      command: sudo poweroff
-      when: confirm_shutdown.user_input == 'yes'
+    - name: Create folder
+      file:
+        path: Mohamed_ali_GHARBI
+        state: directory
